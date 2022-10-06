@@ -1,0 +1,11 @@
+.text-decorator-none{
+    text-decoration: none;
+}
+.banner-login{
+    background-image: url(../../img/img-fundo-1.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vh;
+    min-height: 100vh;
+}

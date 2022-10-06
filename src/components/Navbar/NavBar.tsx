@@ -5,7 +5,7 @@ import {
   } from "@material-ui/core";
   import { Box } from '@mui/material'
   import {Link} from 'react-router-dom';
-  import './Nav.css';
+  import './NavBar.css';
   
   function NavBar() {
     return (

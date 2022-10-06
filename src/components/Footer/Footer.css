@@ -1,0 +1,9 @@
+.footer--container{
+    
+    background-color: antiquewhite;
+    height: 120px;
+    align-items: center;
+}
+.footer--item{
+    text-align: center;
+}
