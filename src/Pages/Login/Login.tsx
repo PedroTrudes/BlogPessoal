@@ -5,7 +5,7 @@ import useLocalStorage from "react-use-localstorage";
 import React, {useState, useEffect , ChangeEvent} from 'react';
 import UserLogin from "../../models/UserLogin";
 import "./Login.css";
-import { api } from "../../services/Service";
+import { login } from "../../services/Service";
 
 
 function Login() {
@@ -36,8 +36,7 @@ function Login() {
   async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
     e.preventDefault();
     try{
-      const resposta = await api.post(`/usuarios/logar`, userLogin)
-      setToken(resposta.data.token)
+      await login(`/usuarios/logar`, userLogin, setToken)
 
       alert('usuario logado com sucesso!');
 
