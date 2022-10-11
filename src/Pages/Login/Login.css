@@ -2,10 +2,72 @@
     text-decoration: none;
 }
 .banner-login{
-    background-image: url(../../img/img-fundo-1.jpg) ;
+    background-image: url(../../img/banner/banner-1blue.png) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100vh;
     min-height: 100vh;
+    position: relative;
+}
+.form-login{
+    position: relative;
+    padding: 55px 0px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+}
+.container-login{
+    position: relative;
+}
+.ball-1{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    background-color: #00ffff;
+    box-shadow: #00ffff 0px 2px 50px 4px;
+    animation: ball-1 15s infinite ease-in-out;
+}
+
+.ball-2{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    background-color: #e4dc09;
+    box-shadow: #e4dc09 0px 22px 70px 4px;
+    animation: ball-2 15s infinite ease-in-out;
+}
+
+@keyframes ball-1 {
+    0%{
+        bottom: -5%;
+        right: -5%;
+    }
+ 
+    50%{
+        bottom: 100%;
+        right: 100%;
+    }
+    100%{
+        bottom: -5%;
+        right: -5%;
+    }
+}
+@keyframes ball-2 {
+    0%{
+        top: -5%;
+        left: -5%;
+    }
+ 
+    50%{
+        top: 100%;
+        left: 100%;
+    }
+    100%{
+        top: -5%;
+        left: -5%;
+    }
 }

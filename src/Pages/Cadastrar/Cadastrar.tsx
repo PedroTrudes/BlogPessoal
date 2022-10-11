@@ -62,7 +62,9 @@ function Cadastrar(){
     return(
         <Grid container className="imagem-2" direction='row' alignItems='center' justifyContent='center'>
             <Grid item xs={6} className="container-form">
-            <form onSubmit={onSubmit}>
+            <div className="ball-1" ></div>
+            <div className="ball-2" ></div>
+            <form onSubmit={onSubmit} className="form-cadastro">
                         <Typography
                             variant="h3"
                             gutterBottom

@@ -1,5 +1,5 @@
 .imagem-2{
-    background-image: url(../../img/img-fundo-1.jpg) ;
+    background-image: url(../../img/banner/banner-1blue.png) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -8,12 +8,16 @@
 }
 
 .container-form{
-    background-color: aliceblue;
-    padding: 45px 45px;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
 }
-
+.form-cadastro{
+    position: relative;
+    padding: 55px 45px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+}
 .btnCancelar{
     margin-right: 15px !important;
 }

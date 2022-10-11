@@ -1,8 +1,79 @@
-.fundo{
-    background-color: red;
+.container-home{
+    background-image: url(../../img/banner/banner-1blue.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
 }
-.titulo{
-    font-size: 1.2em;
-    color: aqua;
+
+.container-text{
+    padding: 45px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+}
+
+.flecha-1{
+    position: absolute;
+    background-color: aliceblue;
+    top: 25%;
+    left: 5%;
+    width: 60px;
+    height: 3px;
+    border-radius: 8px;
+    animation: flecha-esquerda 4s infinite ease-in;
+}
+.flecha-2{
+    position: absolute;
+    background-color: aliceblue;
+    top: 45%;
+    left: 5%;
+    width: 60px;
+    height: 3px;
+    border-radius: 8px;
+    animation: flecha-direita 3s infinite ease-in;
+}
+.flecha-3{
+    position: absolute;
+    background-color: aliceblue;
+    top: 70%;
+    rotate: 270deg;
+    right: 25%;
+    width: 60px;
+    height: 3px;
+    border-radius: 8px;
+    animation: flecha-top 3s infinite ease-in;
     
+}
+@keyframes flecha-esquerda {
+    to{
+        top: 25%;
+        left: 95%;
+    }
+    from{
+        top: 25%;
+        left: 0%;
+    }
+}
+
+@keyframes flecha-direita {
+    to{
+        top: 45%;
+        left: 0%;
+    }
+    from{
+        top: 45%;
+        left: 95%;
+    }
+}
+@keyframes flecha-top {
+    to{
+        top: 70%;
+        right: 25%;
+    }from{
+        top: 0%;
+        right: 25%;
+    }
 }

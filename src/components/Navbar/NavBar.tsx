@@ -10,7 +10,7 @@ import {
   function NavBar() {
     return (
       <>
-        <AppBar position="static">
+        <AppBar position="fixed" className="nav-bar">
             <Toolbar variant='dense' >
             <Box display='flex' justifyContent='space-around' className="tollbar-container">
               <Box style={{cursor: 'pointer'}}>
