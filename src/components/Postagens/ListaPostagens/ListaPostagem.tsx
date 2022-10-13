@@ -5,7 +5,8 @@ import { busca } from '../../../services/Service'
 import { Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
 import { Box } from "@mui/material";
 import useLocalStorage from 'react-use-localstorage';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
+import './ListaPostagem.css';
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
@@ -38,7 +39,7 @@ function ListaPostagem() {
     <>
       {
         posts.map(post => (
-          <Box m={2} >
+          <Box m={2} className="container-postagem" >
             <Card variant="outlined">
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>

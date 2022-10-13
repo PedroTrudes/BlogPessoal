@@ -23,7 +23,7 @@
     width: 60px;
     height: 3px;
     border-radius: 8px;
-    animation: flecha-esquerda 4s infinite ease-in;
+    animation: flecha-esquerda 8s infinite ease-in;
 }
 .flecha-2{
     position: absolute;
@@ -33,7 +33,7 @@
     width: 60px;
     height: 3px;
     border-radius: 8px;
-    animation: flecha-direita 3s infinite ease-in;
+    animation: flecha-direita 10s infinite ease-in;
 }
 .flecha-3{
     position: absolute;
@@ -44,36 +44,52 @@
     width: 60px;
     height: 3px;
     border-radius: 8px;
-    animation: flecha-top 3s infinite ease-in;
+    animation: flecha-top 9s infinite ease-in-out;
     
 }
 @keyframes flecha-esquerda {
-    to{
+    0%{
         top: 25%;
         left: 95%;
     }
-    from{
+    50%{
         top: 25%;
         left: 0%;
+        rotate: 180deg;
+    }
+    100%{
+        top: 25%;
+        left: 95%;
     }
 }
 
 @keyframes flecha-direita {
-    to{
+    0%{
         top: 45%;
         left: 0%;
     }
-    from{
+    50%{
         top: 45%;
         left: 95%;
+        rotate: 180deg;
+    }
+    100%{
+        top: 45%;
+        left: 0%;
     }
 }
 @keyframes flecha-top {
-    to{
+    0%{
         top: 70%;
         right: 25%;
-    }from{
+    }
+    50%{
         top: 0%;
+        right: 25%;
+        rotate: 150deg;
+    }
+    100%{
+        top: 70%;
         right: 25%;
     }
 }

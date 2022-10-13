@@ -5,7 +5,6 @@ import Tema from '../../../models/Tema';
 import { Box } from "@mui/material";
 import { useNavigate } from 'react-router-dom'
 import useLocalStorage from 'react-use-localstorage';
-import './ListaTema.css';
 import { busca } from '../../../services/Service';
 
 function ListaTema() {
